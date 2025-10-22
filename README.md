@@ -24,11 +24,11 @@ Gist of whatever I yapped below,
 `createParameterLayout` : You literally create a `vector` (not an actual vector but analogies help) of `AudioParameter` objects, and return that. That's it!
 
 
-`juce::AudioProcessorValueTreeState::ParameterLayout BitCrusherAudioProcessor::createParameterLayout()`                       
+`juce::AudioProcessorValueTreeState::ParameterLayout BitCrusherAudioProcessor::createParameterLayout()`
 
 	{
 		
-    juce::AudioProcessorValueTreeState::ParameterLayout layout{}; |inst. of layout|
+    juce::AudioProcessorValueTreeState::ParameterLayout layout{};
 
     layout.add(
         std::make_unique<juce::AudioParameterFloat>(
