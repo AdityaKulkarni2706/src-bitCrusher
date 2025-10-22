@@ -24,7 +24,7 @@ Gist of whatever I yapped below,
 `createParameterLayout` : You literally create a `vector` (not an actual vector but analogies help) of `AudioParameter` objects, and return that. That's it!
 
 
-`juce::AudioProcessorValueTreeState::ParameterLayout BitCrusherAudioProcessor::createParameterLayout()`    |fn-scope and fn-name|                              
+`juce::AudioProcessorValueTreeState::ParameterLayout BitCrusherAudioProcessor::createParameterLayout()`                       
 
 	{
 		
