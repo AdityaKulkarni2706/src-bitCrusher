@@ -24,7 +24,7 @@ Gist of whatever I yapped below,
 `createParameterLayout` : You literally create a `vector` (not an actual vector but analogies help) of `AudioParameter` objects, and return that. That's it!
 
 
-`juce::AudioProcessorValueTreeState::ParameterLayout  |return-type|               BitCrusherAudioProcessor::createParameterLayout()    |fn-scope and fn-name|                              
+`juce::AudioProcessorValueTreeState::ParameterLayout BitCrusherAudioProcessor::createParameterLayout()`    |fn-scope and fn-name|                              
 
 	{
 		
@@ -101,8 +101,8 @@ The way you **connect** your APVTS to your Knob is by sending *those* things in 
 Example Syntax:
 
 `wetAttachment = std::make_unique<SliderAttachment>(
-    `audioProcessor.apvts, "Wet", wetSlider`
-`);`
+    audioProcessor.apvts, "Wet", wetSlider
+);`
 
 I will be honest, I am not yet certain to why `make_unique` is used. But I know it is right. 
 
